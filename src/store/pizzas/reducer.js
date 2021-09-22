@@ -36,7 +36,7 @@ export default function reducer(state = initialState, action) {
       const newPizza = {
         name: action.payload.name,
         description: action.payload.description,
-        id: state.allPizzas.length,
+        id: state.allPizzas.length + 1,
         bought: 0,
       };
       return {

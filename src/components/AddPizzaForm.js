@@ -8,19 +8,12 @@ export default function AddPizzaForm() {
   const dispach = useDispatch();
 
   const submit = (event) => {
-    // to make sure that the form does not redirect (which is normal browser behavior)
     event.preventDefault();
 
-    console.log("new pizza:", name, description);
-
-    // TODO:
-    // - dispatch an action that sends the new pizza to the store
     dispach(addNewPizza(name, description));
-    // - clear the input fields
     setName("");
     setDescription("");
   };
-
   return (
     <form onSubmit={submit}>
       <h2>Add a new pizza</h2>

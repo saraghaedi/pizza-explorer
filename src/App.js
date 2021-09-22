@@ -1,12 +1,14 @@
 import "./App.css";
-import PizzaList from "./components/pizzaList";
+import PizzaList from "./components/PizzaList";
 import AddPizzaForm from "./components/AddPizzaForm";
+import RestaurantList from "./components/RestaurantList";
 
 function App() {
   return (
     <div className="App">
       <PizzaList />
       <AddPizzaForm />
+      <RestaurantList />
     </div>
   );
 }
